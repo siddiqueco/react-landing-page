@@ -31,11 +31,16 @@ const CardSectionStyled = styled.section`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
+      @media screen and (max-width: 845px){
+         grid-template-columns: repeat(1, 1fr);
+      }
+
       .card-right{
          display: flex;
          justify-content: flex-end;
       }
       .card-left{
+
          p{
             padding: 1rem 0;
          }

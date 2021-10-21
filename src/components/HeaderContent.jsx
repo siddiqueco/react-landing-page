@@ -33,11 +33,17 @@ const HeaderContentStyled = styled.div`
    grid-template-columns: repeat(2, 1fr);
    padding-top: 3rem;
 
+   @media screen and (max-width: 700px){
+        grid-template-columns: repeat(1, 1fr);
+   }
 
    .left-content{
       display: flex;
       align-items: center;
       padding-right: 3rem;
+      @media screen and (max-width: 480px){
+         width: 100%;
+      }
 
       h1{
          font-size: 4rem;
@@ -55,7 +61,7 @@ const HeaderContentStyled = styled.div`
       position: relative;
       display: flex;
       justify-content: center;
-
+      
 
       .phone{
          width: 80%;
@@ -84,8 +90,35 @@ const HeaderContentStyled = styled.div`
          animation: move 8s infinite;
          animation-delay: .5s;
          transition: all .4s ease-in-out;
+         
       }
    }
+
+    //Header Animations
+    .message1{
+        @keyframes move{
+            0%{
+                transform: translateY(0) rotate(0) scale(1) translateX(0);
+            }
+            50%{
+                transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+            }
+            100%{
+                transform: translateY(0)  rotate(0deg) scale(1) translateX(0);
+            }
+        }
+        @keyframes move2{
+            0%{
+                transform: translateY(0) rotate(0) scale(1) translateX(0);
+            }
+            50%{
+                transform: translateY(-10px) rotate(60deg) scale(1.1) translateX(10px);
+            }
+            100%{
+                transform: translateY(0)  rotate(0deg) scale(1) translateX(0);
+            }
+        }
+    }
    
 `
 

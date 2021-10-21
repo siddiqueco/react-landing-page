@@ -70,8 +70,9 @@ const PaymentStyled = styled.section`
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         padding-top: 6.4rem;
+        
         @media screen and (max-width: 689px){
-            grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(1, 1fr);
         }
     }
    p{

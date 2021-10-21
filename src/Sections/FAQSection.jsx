@@ -35,7 +35,7 @@ const FaqStyled= styled.section`
    .lines{
       position: absolute;
       left: 0;
-      top: 300%;
+      top: 360%;
       width: 100%;
       z-index: -1;
 

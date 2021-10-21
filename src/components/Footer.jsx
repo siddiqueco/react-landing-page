@@ -43,6 +43,16 @@ const FooterStyled = styled.footer`
    padding: 0 18rem;
    background-color: #dce2f0;
 
+   @media screen and (max-width: 1347px){
+      padding: 5rem 14rem;
+   }
+   @media screen and (max-width: 1186px){
+      padding: 5rem 8rem;
+   }
+   @media screen and (max-width: 990px){
+      padding: 5rem 4rem;
+   }
+
    .footer-con{
       display: grid;
       grid-template-columns: repeat(2 , 1fr);
@@ -51,6 +61,14 @@ const FooterStyled = styled.footer`
          align-items: center;
          img{
             width: 90px;
+         }
+      }
+
+      @media screen and (max-width: 480px){
+         grid-template-columns: repeat(1 , 1fr);
+         .logo-wrap{
+            margin: 0 auto;
+            p{ display: none}
          }
       }
    }
