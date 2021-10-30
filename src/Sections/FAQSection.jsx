@@ -7,19 +7,21 @@ import Questions from '../components/Questions'
 
 const FAQSection = () => {
    return (
-      <FaqStyled>
+      <FaqStyled id='faq'>
          <InnerLayout>
-            <h3 className="small-heading">Frequently <span>asked questions</span></h3>
-            <p className='c-para'>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis architecto recusandae officia veritatis impedit amet praesentium at consequuntur vero, 
-            </p>
+            <div  data-aos='fade-right'>
+               <h3 className="small-heading">Frequently <span>asked questions</span></h3>
+               <p className='c-para'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis architecto recusandae officia veritatis impedit amet praesentium at consequuntur vero,
+               </p>
+            </div>
             <div className="lines">
                <img src={lines} alt="" />
             </div>
-            <div className="questions-con">
+            <div className="questions-con" >
                {
-                  questions.map( q=>(
-                     <Questions key={q.id} {...q} />
+                  questions.map(q => (
+                     <Questions  key={q.id} {...q} />
                   ))
                }
             </div>
@@ -27,7 +29,7 @@ const FAQSection = () => {
       </FaqStyled>
    )
 }
-const FaqStyled= styled.section`
+const FaqStyled = styled.section`
    .c-para{
       width: 60%;
       margin: 0 auto;

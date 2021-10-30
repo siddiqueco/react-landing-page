@@ -14,10 +14,12 @@ const PaymentSection = () => {
    return (
       <PaymentStyled>
          <InnerLayout>
-            <h3 className="small-heading">
-               An exectional service, <span>at  the right price</span>
-            </h3>
-            <p className="c-para">Start with our free plan and switch to premium as you grow. </p>
+            <div data-aos='fade-down-right'>
+               <h3 className="small-heading">
+                  An exectional service, <span>at  the right price</span>
+               </h3>
+               <p className="c-para">Start with our free plan and switch to premium as you grow. </p>
+            </div>
             <div className='card-con'>
                <Card
                   account={'Free'}

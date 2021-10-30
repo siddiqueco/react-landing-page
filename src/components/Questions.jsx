@@ -8,8 +8,8 @@ const Questions = ({ title, description }) => {
       setToggle(!toggle)
    }
    return (
-      <QuestionStyled>
-         <div className="q-con">
+      <QuestionStyled >
+         <div  className="q-con">
             <div className="toggle-title">
                <h4>{title}</h4>
                <button onClick={toggleQuestion}>

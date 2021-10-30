@@ -1,15 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { InnerLayout } from '../styles/Layout'
 import card from '../assets/img/creditcard.svg'
+import { fadeInLeft } from 'react-animations'
 
 const CardSection = () => {
    return (
-      <CardSectionStyled>
-         <InnerLayout>
+      <CardSectionStyled id='card'>
+         <InnerLayout >
             <div className="card-container">
-               <div className="card-left">
-                  <h2 className="secondary-heading">
+               <div  className="card-left">
+                  <h2 data-aos='fade-right' data-aos-duration='3000' className="secondary-heading" >
                      One card for all your payments
                   </h2>
                   <p>
@@ -25,6 +26,9 @@ const CardSection = () => {
       </CardSectionStyled>
    )
 }
+// const FadeInLeft = styled.h1`
+//    animation: 2s ${keyframes`${fadeInLeft}`};
+// `
 
 const CardSectionStyled = styled.section`
    .card-container{

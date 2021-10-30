@@ -5,13 +5,13 @@ import phone from '../assets/img/phone.svg'
 import ring1 from '../assets/img/ring_orange.svg';
 import message1 from '../assets/img/message_pink.svg';
 import message2 from '../assets/img/message_blue.svg';
-
+ 
 const HeaderContent = () => {
    return (
       <HeaderContentStyled>
          <div className="left-content">
             <div className="left-text-container">
-               <h1>Smart banking for frelencers</h1>
+               <h1 data-aos='zoom-in-right'>Smart banking for frelencers</h1>
                <p className="white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus architecto sed, corrupti sint nobis cumque numquam provident molestias nemo sequi. Accusantium neque laboriosam nemo fugit fuga. At, rem sed.
                </p>
@@ -27,6 +27,12 @@ const HeaderContent = () => {
       </HeaderContentStyled>
    )
 }
+
+
+// const Bounce=styled.h1`
+//    animation: 3s ${keyframes`${bounce}`} infinite;
+// `
+
 
 const HeaderContentStyled = styled.div`
    display: grid;

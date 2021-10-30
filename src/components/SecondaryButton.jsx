@@ -24,7 +24,7 @@ const SecondaryButtonStyled = styled.button`
    display: flex;
    align-items: center;
    justify-content: space-around;
-
+   
    span{
       margin-right: 10px;
    }

@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../assets/img/bg.svg";
-import HeaderContent from "./HeaderContent";
-import Navigation from "./Navigation";
+import HeaderContent from "../components/HeaderContent";
+import Navigation from "../components/Navigation";
 
 const Header = () => {
   return (
-    <HeaderStyled>
+    <HeaderStyled id='header'>
       <div className="header-content">
         <Navigation />
         <HeaderContent />

@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { InnerLayout } from '../styles/Layout'
-import ChartStats from './ChartStats'
+import ChartStats from '../components/ChartStats'
 import chart from '../assets/img/chart.svg'
-import AnimatedButton from './AnimatedButton'
+import AnimatedButton from '../components/AnimatedButton'
+
 
 const ChartSection = () => {
    return (
-      <ChartStyled >
+      <ChartStyled  id='pricing'>
          <InnerLayout>
             <div className="chart-con">
                <div className="chart-left">
@@ -20,7 +21,7 @@ const ChartSection = () => {
                   </div>
                </div>
                <div className="chart-right">
-                  <h2 className="secondary-heading">
+                  <h2 data-aos='fade-right' className="secondary-heading">
                      Manage your finances like a pro in no time
                   </h2>
                   <p>

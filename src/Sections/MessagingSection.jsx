@@ -15,7 +15,7 @@ const MessagingSection = () => {
          <InnerLayout>
             <div className='message-con'>
                <div className="left-items">
-                  <h2 className="secondary-heading">
+                  <h2 data-aos='fade-right' className="secondary-heading">
                      We support you in 5 diffrent language
                   </h2>
                   <p className='left-para'>
