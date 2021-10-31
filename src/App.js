@@ -6,16 +6,17 @@ import Footer from "./components/Footer";
 import Header from "./Sections/Header";
 import MessagingSection from "./Sections/MessagingSection";
 import FAQSection from "./Sections/FAQSection";
-import PaymentSection from "./Sections/PaymentSection";
+import PaymentSection from "./Sections/PricingSection";
 import { OuterLayout } from "./styles/Layout";
 import aos from 'aos'
 import 'aos/dist/aos.css'
+import ScrolledButton from "./components/ScrolledButton";
 
 function App() {
 
 
   useEffect(()=>{
-    aos.init({duration: 2000})
+    aos.init({duration: 3000})
   },[])
 
   return (
@@ -31,6 +32,7 @@ function App() {
         </main>
       </OuterLayout>
       <Footer />
+      <ScrolledButton />
     </div>
   );
 }

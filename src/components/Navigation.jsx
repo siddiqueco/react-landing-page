@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import PrimaryButton from './PrimaryButton'
 import logo from '../assets/img/logo.svg'
 
@@ -14,12 +14,14 @@ const Navigation = () => {
             <img src={logo} alt="" />
          </div>
          <ul>
-            <li> <Link  to="header" spy={true} smooth={true}>Home </Link></li>
-            <li><a href="">Feathures</a></li>
             <li>
-               <a href="">
-                  Pricing
-               </a>
+               <Link to="header" spy={true} smooth={true}>Home </Link>
+            </li>
+            <li>
+               <Link to="feathures" spy={true} smooth={true}>Feathures </Link>
+            </li>
+            <li>
+               <Link to="pricing" spy={true} smooth={true}>Pricing </Link>
             </li>
          </ul>
          <PrimaryButton name='Signup' />
@@ -36,6 +38,9 @@ const NavigationStyled = styled.nav`
       display: flex;
       justify-content: space-between;
       width: 40%;
+      li{
+         cursor: pointer;
+      }
    }
 `
 

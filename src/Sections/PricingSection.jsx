@@ -12,7 +12,7 @@ import checkDisabled from '../assets/img/check-disabled.svg';
 
 const PaymentSection = () => {
    return (
-      <PaymentStyled>
+      <PaymentStyled id='pricing'>
          <InnerLayout>
             <div data-aos='fade-down-right'>
                <h3 className="small-heading">

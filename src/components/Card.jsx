@@ -64,24 +64,24 @@ function Card({
 
 const CardStyled = styled.div`
     background-color: white;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     border-radius: 50px;
     box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
     .card-title{
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         color: #000;
         text-align: center;
         padding: 1.5rem 0;
         span{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
     }
     .button-con{
         text-align: center;
-        padding: 1.5rem 0;
+        padding: 1.4rem 0;
         button{
             border: 2px solid #16194F;
-            padding: .8rem 1.8rem;
+            padding: .6rem 1.5rem;
             outline: none;
             cursor: pointer;
             background: transparent;
@@ -101,15 +101,16 @@ const CardStyled = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.5rem 0;
+        padding: 1.4rem 0;
         img{
-            padding: 0 .3rem;
+            padding: 0 .2rem;
         }
     }
     .text-check{
         display: flex;
         align-items: center;
         padding: .3rem 0;
+        font-size: 1.1rem;
         img{
             padding-right: .3rem;
             width: 24px;
@@ -124,6 +125,5 @@ const CardStyled = styled.div`
             color: #B7B7B7;
         }
     }
-    
 `;
 export default Card;

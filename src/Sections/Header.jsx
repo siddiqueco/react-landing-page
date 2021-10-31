@@ -16,6 +16,7 @@ const Header = () => {
 };
 
 const HeaderStyled = styled.header`
+
   min-height: 100vh;
   width: 100%;
   background-image: url(${bg});

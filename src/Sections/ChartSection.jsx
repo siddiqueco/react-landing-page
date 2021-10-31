@@ -8,7 +8,7 @@ import AnimatedButton from '../components/AnimatedButton'
 
 const ChartSection = () => {
    return (
-      <ChartStyled  id='pricing'>
+      <ChartStyled  id='feathures'>
          <InnerLayout>
             <div className="chart-con">
                <div className="chart-left">
