@@ -3,7 +3,7 @@ const questions = [
     id: 1,
     title: "Who can open a Draft account?",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptate unde vero corporis tempora praesentium laboriosam ratione incidunt a odit.",
+      "Only premium users can open a draft account",
   },
   {
     id: 2,
