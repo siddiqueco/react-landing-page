@@ -1,38 +1,29 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "./App.css";
-import CardSection from "./Sections/CardSection";
-import ChartSection from "./Sections/ChartSection";
-import Footer from "./components/Footer";
-import Header from "./Sections/Header";
-import MessagingSection from "./Sections/MessagingSection";
-import FAQSection from "./Sections/FAQSection";
-import PaymentSection from "./Sections/PricingSection";
-import { OuterLayout } from "./styles/Layout";
-import aos from 'aos'
-import 'aos/dist/aos.css'
-import ScrolledButton from "./components/ScrolledButton";
+import Card from "./components/card";
+import IntsBlog from "./components/intsblog";
 
 function App() {
-
-
-  useEffect(()=>{
-    aos.init({duration: 3000})
-  },[])
-
   return (
-    <div className="App">
-      <Header />
-      <OuterLayout>
-        <main>
-          <CardSection />
-          <ChartSection />
-          <MessagingSection />
-          <PaymentSection />
-          <FAQSection />
-        </main>
-      </OuterLayout>
-      <Footer />
-      <ScrolledButton />
+    <div className="bg">
+      <div class="header">
+        <a href="#default" class="logo">
+          <img src="/Whinzo.png" alt="" />
+        </a>
+        <div class="header-right">
+          <a class="active" href="#home">
+            Home
+          </a>
+          <a href="#contact">Creators</a>
+          <a href="#about">My Campaign</a>
+          <a href="#about">
+            <img src="/VectorAvatar.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <IntsBlog />
+      <Card/>
     </div>
   );
 }

@@ -1,0 +1,172 @@
+.App{
+    background-color: white;
+    height: 120px;
+    width: 320px;
+   
+
+}
+.header {
+    overflow: hidden;
+    /* background-color:white; */
+    padding: 10px 10px;
+    width: 1190px;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px) {
+    .header {
+        width: 80%;
+        margin: auto;
+
+
+    }
+}
+  .header a {
+    float: left;
+    color: rgba(27, 4, 4, 0.801);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px; 
+    /* line-height: 25px; */
+    /* border-radius: 4px; */
+  }
+  
+  .header a.logo {
+    font-size: 30px;
+    font-weight: 200px;
+  }
+  
+  .header a:hover {
+    /* background-color: #ddd; */
+    color: rgb(29, 119, 236);
+  }
+  
+  /* .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  } */
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 8px;
+      width: 100%;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+  .bg{
+    background-color:#ebf7ff;
+    height: auto;
+    width: auto;
+  }
+
+  .Inst-profile{
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    margin-top: 4px;
+
+  }
+  .text_col_whin{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .text_highlight{
+    color:#1E9B9F;
+  }
+  .text_col_high{
+    color: darkgrey;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -18px;
+
+  }
+  .content_whin_page{
+    padding-top: -60px;
+  }
+  .search_inst_user{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .input_box_search{
+    border-color: #32d6dbe8;
+  }
+  .card_user_whin{
+    margin-top: 20px;
+  }
+  .main_card_user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  .card_inst_profile_whin{
+    width: 310px;
+    height: 530px;
+    border-radius: 8px;
+    border: 2px solid rgb(21, 159, 238);
+    
+  }
+  .pic_user_center{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .pic_user_center_inst{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 12px;
+  }
+  .text_size_profile{
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: -0.1px;
+    
+  }
+  .follower_like_name{
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    gap: 24px;
+  }
+  .gap_items{
+    display: flex;
+    gap: 6px;
+  }
+  .meter_cal_engage{
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+  }
+  .meter_rate{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    /* background-color: #f1ffff; */
+    
+
+  }
+  .login_page{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 23px;
+    border-radius: 12px;
+    border: 2px solid rgb(21, 159, 238);
+    margin: auto;
+    gap: 4px;
+  }
